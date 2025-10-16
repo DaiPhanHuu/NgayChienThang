@@ -1,33 +1,29 @@
-body{
+*{
     margin: 0;
-    background-color: rgb(255, 255, 255);
+    padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
 /* Footer - code */
 
 footer {
-    width: 100%;
-    height: 326;
-    gap: 10px;
+    width: 100vw;
+    height: auto;
     opacity: 1;
-    margin: 20px;
+    margin: 1vw;
     bottom: 0;
 }
 
 .main-footer {
     display: flex;
     justify-content: space-between;
-    width: 1760;
-    height: 326;
-    gap: 200px;
-    opacity: 1;
+    width: 100vw;
+    height: auto;
 }
 
 .footer-about {
-    width: 606;
-    height: 326;
-    gap: 8px;
+    width: auto;
+    height: auto;
     opacity: 1;
 }
 
@@ -66,6 +62,10 @@ footer {
     margin-bottom: 10px;
 }
 
+.social-media a {
+    padding: 5px;
+}
+
 .contact-info p {
     font-size: 16px;
     color: #555555;
@@ -92,18 +92,15 @@ footer {
 }
 
 .footer-link {
-    padding-right: 100px;
+    padding-right: 5vw;
 }
 
-.footer-menu h4{
+.footer-menu {
     margin: 20px;
-    padding: 0;
 }
 
 .footer-menu ul {
     list-style: none;
-    margin: 20px;
-    padding: 0;
 }
 
 .footer-menu a {
