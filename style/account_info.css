@@ -1,181 +1,253 @@
+:root {
+    --primary-text-color: #333;
+    --secondary-text-color: #666;
+    --link-color: #969696;
+    --border-color: #e0e0e0;
+    --background-color: white;
+    --container-bg-color: white;
+    --sidebar-bg-color: white;
+    --active-item-bg: #f0f0f0;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.account-info {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: 500;
+}
+
+a:hover {
+    color: red;
+}
+
+img {
+    max-width: 100%;
     height: auto;
-    width: 100%;
+    display: block;
 }
 
-.basic-info {
-    margin: 1vw;
+/* --------------------------- */
+
+.account-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
 }
 
-.basic-info h1 {
-    font-size: calc(16px + 0.6vw);
+.account-content {
+    flex: 2;
+    background-color: var(--container-bg-color);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rbga(0,0,0,0.15);
 }
 
-.section {
-    width: clamp(300px, 300px + 18vw, 800px);
-    border-bottom: 1px solid rgb(175, 175, 175);
-    padding-top: 2vh; padding-bottom: 2vh; 
+.account-sidebar {
+    flex: 1;
+    position: sticky;
+    top: 2rem;
 }
 
-.name-info {
+.account-content h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.info-section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.section .image-profile .avatar {
-    width: 5vw;
-    height: 5vw;
-    border-radius: 50%; 
+.info-section:last-of-type {
+    border-bottom: none;
+}
+
+.info-label {
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.info-value {
+    color: var(--secondary-text-color);
+}
+
+.info-section .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     object-fit: cover;
 }
 
-.name-info h2 {
-    font-size: clamp(1rem, 1rem + 0.7vw, 1.4rem);
+.linked-accounts h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 
-.section p {
-    font-size: clamp(1rem, 1rem + 0.3vw, 1.6rem);
-    line-height: 1.6;
+.linked-accounts p {
+    color: var(--secondary-text-color);
+    margin-bottom: 1.5rem;
+    max-width: 80%;
 }
 
-.name-info p a {
-    color: gray;
-    font-size: clamp(0.8rem, 0.8rem + 0.2vw, 1.3rem);
-    text-decoration:  none;
-    color: gray;
-}
-
-.connection-account p {
-    font-weight: 100;
-    font-size: ;
-    font-size: clamp(1rem, 1rem + 0.7vw, 1.2rem);
-}
-
-.connection-list {
-    list-style: none;
-}
-
-.connection-item {
+.social-link-item {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
+    padding: 0.75rem 0;
 }
 
-.provider-info {
+.social-link-item a {
+    text-decoration: underline;
+}
+
+.social-provider {
     display: flex;
     align-items: center;
+    gap: 1 rem;
     font-weight: 500;
-    font-size: 16px;
 }
 
-.provider-info img {
+.social-provider img {
     width: 24px;
     height: 24px;
-    margin-right: 12px;
 }
 
-.action-link {
-    color: black;
-    font-weight: 600;
+.social-provider span {
+    margin-left: 1rem;
 }
 
-
-
-.another-info {
-    margin: 2vw;
-    justify-content: center;
-    align-items: flex-start;
-    width: 15vw;
-    border-radius: 20px;
+a.disconnect {
+    color: red;
 }
 
-.another-info .menu-info {
-    height: auto;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-
+.sidebar-card {
+    background-color: var(--container-bg-color);
+    border-radius: 30px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgb(218, 218, 218);
 }
 
-.account-info .support {
-    margin-top: 1vw;
-    height: 10vh;
-    background-color: #f7f7f7;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.menu-info .avatar-profile {
+.user-profile {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 1vw;
-    border-bottom: 1px solid rgb(175, 175, 175);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.menu-info .avatar-profile .user-name{
-    justify-content: center;
-    align-items: center;
-    margin: 1vw;
-}
-
-.menu-info .avatar-profile .user-name h2 {
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-.menu-info .avatar-profile .user-name p {
-    font-weight: 300;
-    font-size: 0.9rem;
-}
-
-.menu-info .avatar-profile .avatar {
-    width: 3.5vw;
-    height: 3.5vw;
-    border-radius: 50%; 
+.user-profile .avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
     object-fit: cover;
+    margin-right: 1rem;
 }
 
-.account-info .menu-info .nav-link-info {
-    margin: 1vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.user-profile-info .name {
+    font-weight: 600;
 }
 
-.account-info .menu-info .link-info {
+.user-profile-info .last-access {
+    font-size: 0.8rem;
+    color: var(--secondary-text-color);
+}
+
+.sidebar-nav ul {
     list-style: none;
 }
 
-.account-info .menu-info .link-info li {
-    margin: 1vw;
+.sidebar-nav ul li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    margin-bottom: 0.25rem;
 }
 
-.account-info .menu-info .link-info a {
+.sidebar-nav ul li a.active, .sidebar-nav ul li a:hover {
+    background-color: var(--active-item-bg);
     text-decoration: none;
-    color: black;
 }
 
-.account-info .menu-info .link-info .sign-out {
+.logout-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--primary-text-color);
+    font-weight: 700;
+    padding-left: 1rem;
+}
+
+.support-box {
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+}
+
+.support-box a {
+    color: rgb(0, 81, 255);
     font-weight: 600;
 }
 
-.account-info .menu-info .link-info a:hover {
-    background-color: rgb(189, 189, 189);
-    padding: 10px;
-    border-radius: 20px;
+@media(max-width: 992px) {
+    .account-container {
+        flex-direction: column-reverse;
+    }
+
+    .account-sidebar {
+        width: 100%;
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .account-content {
+        padding: 1.5rem;      
+    }
+
+    .info-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .info-section a {
+        margin-top: 0.5rem;
+    }
+     .linked-accounts p {
+         max-width: 100%;
+     }
 }
