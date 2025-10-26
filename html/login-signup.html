@@ -8,25 +8,32 @@
 </head>
 <body>
   <h1>Chào mừng bạn</h1>
-  <div class="tab">
-    <button class="login_tab">Đăng nhập</button>
-    <button class="sign_up_tab">Đăng ký</button>
+  <div class="tab_warpper">
+    <button class="tab active" id="login_tab">Đăng nhập</button>
+    <button class="tab" id="signup_tab">Đăng ký</button>
   </div>
-    <div class="form-warpper">
-      <div class="login">    
+  <div class="form_warpper">
+    <div class="form_slider">
+      <form class="form active" id="login_form">    
         <h2>Email</h2>
-        <input type="email" name="email" placeholder="Email" required>
+        <input type="email" name="email" placeholder="Nhập Email" required>
         <h2>Mật khẩu</h2>
-        <input type="password" name="password" placeholder="Mật khẩu" required>
-        <a class="forgot-password" href="example.url">Quên mật khẩu?</a>  
-      </div>
-      <div class="sign_up">
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="password" name="password" placeholder="Mật khẩu" required>
-        <input type="password" name="re-password" placeholder="Xác nhận mật khẩu" required>
-      </div>
-      <button class="submit-button" type="submit">Tiếp tục</button>  
+        <input type="password" name="password" placeholder="Nhập mật khẩu" required>
+        <a class="forgot_password" href="#">Quên mật khẩu?</a>  
+        <button class="submit_button" type="submit">Tiếp tục</button>  
+      </form>
+      <form class="form" id="signup_form">
+        <h2>Email đăng ký</h2>
+        <input type="email" name="email" placeholder="Nhập Email" required>
+        <h2>Mật khẩu</h2>
+        <input type="password" name="password" placeholder="Nhập mật khẩu" required>
+        <h2>Xác nhận mật khẩu</h2>
+        <input type="password" name="re_password" placeholder="Xác nhận mật khẩu" required>
+        <button class="submit_button" type="submit">Tiếp tục</button>  
+      </form>
     </div>
+  </div>
 
+  <script src="../js/login_signup.js"></script>
 </body>
 </html>

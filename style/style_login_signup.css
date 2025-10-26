@@ -17,12 +17,12 @@ h2
   color: black;
   margin-bottom: 10px;
 }
-.tab {
+.tab_warpper {
   overflow: hidden;
   width: 35vw;
   margin: 48px 32.5vw 0px;
 }
-.login_tab, .sign_up_tab {
+.tab {
   background-color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -37,31 +37,37 @@ h2
   padding-bottom: 12px;
   margin-bottom: 24px;
 }
-.form-warpper
-{
+.tab.active {
+  border-bottom: 2px solid red;
+  color: red;
+  font-weight: 700;
+}
+.form_warpper{
   width: 35vw;
   margin: 0px 32.5vw 0px;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
 }
-.login{
-  display: block;
-  margin: none;
-  padding: none;
+.form_slider{
+  display: flex;
+  width: 200%;
+  transition: transform 0.3s ease-in-out;
 }
-.sign_up {
-  display: none;
-  margin: none;
-  padding: none;
-}
-.login input, .sign_up input {
-  display: block;
+#login_form, #signup_form {
   width: 100%;
+  margin: none;
+  padding: none;
+}
+.form input{
+  display: block;
+  width: 95%;
   margin-bottom: 24px;
   padding: 12px 20px;
   box-sizing: border-box;
   border: 2px solid gray;
   border-radius: 4px;
 }
-.login a{
+#login_form a{
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -70,19 +76,19 @@ h2
   float: right;
   margin-bottom: 24px;
 }
-.login a:hover{
+#login_form a:hover{
   text-decoration: underline;
 }
-.login input::placeholder, .sign_up input::placeholder {
+.form input{
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  color: gray;
+  color: black;
   margin: none;
   padding: none;
 } 
-.submit-button {
-  width: 100%;
+.submit_button {
+  width: 95%;
   text-align: center;
   background-color: red;
   color: white;
@@ -92,9 +98,10 @@ h2
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin: 10px 0px 32px 0px;
   padding: 12px 20px; 
 }
-.submit-button:hover {
+.submit_button:hover {
   background-color: darkred;
   transition: 0.2s;
 }
