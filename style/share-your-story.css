@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.create-story {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.share-story {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(211, 3, 4, 0.4) 50%, rgba(109, 2, 2, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    border-radius: 20px;
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+.ss-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ss-nav .account-links {
+    width: 70px;
+    height: 70px;
+}
+
+.ss-nav .account-links img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ss-nav ul {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.ss-nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.share-story .ss-text {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.share-story .ss-text h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.share-story .ss-text p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.make-story {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.make-story .mk-form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.make-story .mk-form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.make-story .mk-form textarea {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box; 
+    border: 1px solid #ccc;
+    border-radius: 10px;     
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.make-story .mk-form textarea:focus {
+    border-color: black; 
+    outline: none;
+}
+
+.make-story .mk-form textarea::placeholder {
+    color: #aaa;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.make-story .mk-form textarea#content {
+    min-height: 300px;
+    resize: vertical;
+}
+
+
