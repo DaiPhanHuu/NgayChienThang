@@ -4,46 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ngày Toàn Thắng</title>
+  <link rel="stylesheet" href="../style/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Playball&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="banner">
     <img src="../assets/main-banner.png" alt="Banner Image">
   </div>
-  <div class="front-page">>
+  <div class="front-page">
     <div class="slider">
-      <img src="../assets/main-1.png" alt="Slide 1">
-      <img src="slide2.jpg" alt="Slide 2">
-      <img src="slide3.jpg" alt="Slide 3">
+      <div class="slide-item">
+        <img src="../assets/home-1.png" alt="Slide 1">
+        <div class="slide-item-1-caption">Đại thắng mùa xuân 1975</div>
+      </div>
     </div>
     <div class="news">
-      <h1>Tin tức mới</h1>
+      <div class="news-header">
+        <h1>Tin tức mới</h1>
+        <a href="#">Xem thêm &gt;</a>
+      </div>
+      <div class="news-main-item">
+        <img src="../assets/main-1.png" alt="1954-1975: Lừng lẫy năm châu, chấn động địa cầu">
+        <div class="news-main-caption">
+          <time datetime="1954-05-7">7/5/1954-</time><time datetime="2025-05-7">7/5/2025</time><br>
+          <h2>Việt Nam</h2>
+          <p>Lừng lẫy năm châu<br>chấn động địa cầu</p>
+        </div>
+      </div>
+
       <div class="news-item">
         <img src="../assets/main-2.png" alt="Nhật ký Đặng Thùy Trâm">
-        <p>4 giờ trước</p>
-        <p>Nhật ký Đặng Thùy Trâm</p>
-        <p>Chuyện về cuốn nhật ký sau 35 năm lưu lạc.</p>
-        <a href="example.url">Xem thêm</a>
+        <div class="news-item-content">
+          <time>4 giờ trước</time>
+          <h2>Nhật ký Đặng Thùy Trâm</h2>
+          <p>Cuốn nhật ký 35 năm lưu lạc.</p>
+        </div>
       </div>
       <div class="news-item">
         <img src="../assets/main-3.png" alt="Địa đạo Củ Chi">
-        <time datetime="2025-03-3">03/3/2025</time>
-        <p>Địa đạo Củ Chi</p>
-        <p>Vùng đất của những anh hùng du kích.</p>
-        <a href="example.url">Xem thêm</a>
+        <div class="news-item-content">
+          <time datetime="2025-03-3">03/3/2025</time>
+          <h2>Địa đạo Củ Chi</h2>
+          <p>Vùng đất anh hùng</p>
+        </div>
       </div>
       <div class="news-item">
         <img src="../assets/main-4.png" alt="Điệp viên Phạm Xuân Ẩn">
-        <time datetime="2025-01-19">19/1/2025</time>
-        <p>Điệp viên hoàn hảo X9</p>
-        <p>Phạm Xuân Ẩn</p>
-        <a href="example.url">Xem thêm</a>
+        <div class="news-item-content">
+          <time datetime="2025-01-19">19/1/2025</time>
+          <h2>Điệp viên hoàn hảo X9</h2>
+          <p>Phạm Xuân Ẩn</p>
+        </div>
       </div>
       <div class="news-item">
         <img src="../assets/main-5.png" alt="Thành cổ Quảng Trị">
-        <time datetime="2025-03-03">03/3/2024</time>
-        <p>Thành cổ Quảng Trị</p>
-        <p>Khúc tráng ca bất tử</p>
-        <a href="example.url">Xem thêm</a>
+        <div class="news-item-content">
+          <time datetime="2025-03-03">03/3/2024</time>
+          <h2>Thành cổ Quảng Trị</h2>
+          <p>Khúc tráng ca bất tử</p>
+        </div>
       </div>
     </div>
   </div>
@@ -51,7 +72,7 @@
   <div class="great-writers">
     <h1>Những nhà văn lỗi lạc của cách mạng Việt Nam</h1>
     <div class="writer-item">
-      <a href="example.url">
+      <a href="#">
         <img src="../assets/main-ToHuu.png" alt="Nhà thơ Tố Hữu">
         <p>Tố Hữu</p>
         <p>Nhà thơ cách mạng</p>
@@ -62,7 +83,7 @@
       </a>
     </div>
     <div class="writer-item">
-      <a href="example.url">
+      <a href="#">
         <img src="../assets/main-XuanDieu.png" alt="Nhà văn Xuân Diệu">
         <p>Xuân Diệu</p> 
         <p>Nhà Thơ</p>
@@ -75,7 +96,7 @@
       </a>
     </div>
     <div class="writer-item">
-      <a href="example.url">
+      <a href="#">
         <img src="../assets/main-CheLanVien.png" alt="Nhà văn Chế Lan Viên">
         <p>Chế Lan Viên</p>
         <p>Nhà Thơ</p>
@@ -86,7 +107,7 @@
       </a>
     </div>
     <div class="writer-item">
-      <a href="example.url">
+      <a href="#">
         <img src="../assets/main-NguyenDinhThi.png" alt="Nhà văn Nguyễn Đình Thi">
         <p>Nguyễn Đình Thi</p>
         <p>Nhà Thơ</p>
@@ -99,8 +120,10 @@
       </a>
     </div>
 
-    <div class="People of the Revolution">
-      <img src="../assets/main-MadamBinh1.png" alt="Madam Bình 1">
+    <div class="People-of-the-Revolution">
+      <div class = "People-of-the-Revolution-column">
+        <img src="../assets/main-MadamBinh1.png" alt="Madam Bình 1">
+      </div>
       <div class="caption">
         <h1>Madam Bình: Người phụ nữ &quot;Khiêu vũ giữa bầy sói&quot;</h1>
         <p>
@@ -110,58 +133,64 @@
           như một nhà ngoại giao xuất sắc của Việt Nam trong thế kỉ XX
         </p>
       </div>
-      <img src="../assets/main-MadamBinh2.png" alt="Madam Bình 2">
-      <img src="../assets/main-MadamBinh3.png" alt="Madam Bình 3">
-      <img src="../assets/main-MadamBinh4.png" alt="Madam Bình 4">
-      <img src="../assets/main-MadamBinh5.png" alt="Madam Bình 5">
+      <div class = "People-of-the-Revolution-art-column">
+        <img src="../assets/main-MadamBinh2.png" alt="Madam Bình 2">
+        <img src="../assets/main-MadamBinh3.png" alt="Madam Bình 3">
+        <img src="../assets/main-MadamBinh4.png" alt="Madam Bình 4">
+      </div>
+      <div class = "People-of-the-Revolution-column">
+        <img src="../assets/main-MadamBinh5.png" alt="Madam Bình 5">
+      </div>
     </div>
 
     <div class="Love Stories of the War">
       <h1>Tình yêu thời chiến</h1>
-      <a href="example.url">Xem thêm</a>
-      <div class="story-item">
-        <img src="../assets/main-HoangDan.png" alt="Chuyện Tình Thiếu Tướng Hoàng Đan">
-        <h2>Chuyện Tình "không tưởng" của Thiếu tướng Hoàng Đan</h2>
-        <p>
-          Ai có thể ngờ phía sau một tướng trận đã đi suốt chiều dài lịch sử 
-          ba cuộc chiến từ chống Pháp, chống Mỹ đến chiến tranh biên giới như 
-          thiếu tướng Hoàng Đan lại là một chuyện tình lãng mạn đến thế.
-        </p>  
-      </div>
-      <div class="story-item">
-        <img src="../assets/main-2.png" alt="Nhật ký Đặng Thùy Trâm">
-        <h2>Chuyện về cuốn nhật ký sau 35 năm lưu lạc</h2>
-        <p>
-          Một cuốn nhật ký được một sĩ quan quân báo Mỹ tham chiến ở 
-          chiến trường Đức Phổ, Quảng Ngãi nhặt được sau trận tập kích 
-          vào một “căn cứ của Việt cộng” đã suýt bị ném vào lửa, nhưng 
-          người phiên dịch đã khuyên anh ta “Đừng đốt, vì trong đó đã có 
-          lửa rồi!”.
-        </p>
-      </div>
-      <div class="story-item">
-        <img src="../assets/main-LeHongPhong-NguyenThiMinhKhai.png" alt="Lê Hồng Phong - Nguyễn Thị Minh Khai">
-        <h2>Lê Hồng Phong - Nguyễn Thị Minh Khai: Trọn một lời thề</h2>
-        <p>
-          Năm 1934, đám cưới của hai người đồng chí Lê Hồng Phong 
-          (Lê Huy Doãn) và Nguyễn Thị Minh Khai diễn ra đầm ấm, giản dị ở 
-          Thượng Hải (Trung Quốc). Sau khi về nước, để đảm bảo nguyên tắc 
-          hoạt động bí mật, hai vợ chồng phải xa nhau.
-        </p>
-      </div>
-      <div class="story-item">
-        <img src="../assets/main-HoangVanThu-HoangNgan.png" alt="Hoàng Văn Thụ - Hoàng Ngân">
-        <h2>Chuyện tình Hoàng Văn Thụ - Hoàng Ngân: Đổi tên theo người yêu đã hy sinh</h2>
-        <p>
-          Chuyện tình giữa những người đồng chí cùng tham gia hoạt động 
-          cách mạng còn có chuyện của Hoàng Văn Thụ và Phạm Thị Vân (Hoàng Ngân).
-        </p>
+      <a href="#">Xem thêm</a>
+      <div class="love-story-container">
+        <div class="love-story-item">
+          <img src="../assets/main-HoangDan.png" alt="Chuyện Tình Thiếu Tướng Hoàng Đan">
+          <h2>Chuyện Tình "không tưởng" của Thiếu tướng Hoàng Đan</h2>
+          <p>
+            Ai có thể ngờ phía sau một tướng trận đã đi suốt chiều dài lịch sử 
+            ba cuộc chiến từ chống Pháp, chống Mỹ đến chiến tranh biên giới như 
+            thiếu tướng Hoàng Đan lại là một chuyện tình lãng mạn đến thế.
+          </p>  
+        </div>
+        <div class="love-story-item">
+          <img src="../assets/main-2.png" alt="Nhật ký Đặng Thùy Trâm">
+          <h2>Chuyện về cuốn nhật ký sau 35 năm lưu lạc</h2>
+          <p>
+            Một cuốn nhật ký được một sĩ quan quân báo Mỹ tham chiến ở 
+            chiến trường Đức Phổ, Quảng Ngãi nhặt được sau trận tập kích 
+            vào một “căn cứ của Việt cộng” đã suýt bị ném vào lửa, nhưng 
+            người phiên dịch đã khuyên anh ta “Đừng đốt, vì trong đó đã có 
+            lửa rồi!”.
+          </p>
+        </div>
+        <div class="love-story-item">
+          <img src="../assets/main-LeHongPhong-NguyenThiMinhKhai.png" alt="Lê Hồng Phong - Nguyễn Thị Minh Khai">
+          <h2>Lê Hồng Phong - Nguyễn Thị Minh Khai: Trọn một lời thề</h2>
+          <p>
+            Năm 1934, đám cưới của hai người đồng chí Lê Hồng Phong 
+            (Lê Huy Doãn) và Nguyễn Thị Minh Khai diễn ra đầm ấm, giản dị ở 
+            Thượng Hải (Trung Quốc). Sau khi về nước, để đảm bảo nguyên tắc 
+            hoạt động bí mật, hai vợ chồng phải xa nhau.
+          </p>
+        </div>
+        <div class="love-story-item">
+          <img src="../assets/main-HoangVanThu-HoangNgan.png" alt="Hoàng Văn Thụ - Hoàng Ngân">
+          <h2>Chuyện tình Hoàng Văn Thụ - Hoàng Ngân: Đổi tên theo người yêu đã hy sinh</h2>
+          <p>
+            Chuyện tình giữa những người đồng chí cùng tham gia hoạt động 
+            cách mạng còn có chuyện của Hoàng Văn Thụ và Phạm Thị Vân (Hoàng Ngân).
+          </p>
+        </div>
       </div>
     </div>
 
-    <div class="Numbers-don't-lie">
+    <div class="Numbers-dont-lie">
       <h1>Những con số không biết nói dối</h1>
-      <a href="example.url">Xem thêm</a>
+      <a href="#">Xem thêm</a>
       <p>
         Cả nước có 1.146.250 Liệt sỹ. Trong đó có 191.605 Liệt sỹ hi sinh 
         trong kháng chiến chống Pháp; 849.018 Liệt sỹ hi sinh trong kháng chiến 
@@ -192,18 +221,18 @@
         <h2>300.000+</h2>
         <p>người nhiễm chất độc màu da cam</p>
       </div>
-      <img class="numbers_img" src="../assets/main-tuongniemlietsi.png" alt="Mộ Liệt Sỹ">
+      <img class="numbers-img" src="../assets/main-tuongniemlietsi.png" alt="Mộ Liệt Sỹ">
     </div>
 
     <div class="Historical-stage">
       <h1>Những giai đoạn lịch sử</h1>
-      <columns>
+      <div class="stage-container">
         <div class="stage-collumn">
           <h1>1945-1954</h1>
           <img src="../assets/main-giaidoanlichsu-1.png" alt="1945-1954">
           <div class="stage-item">
             <h2>Ngày Quốc Khánh Việt Nam 2/9 - Dấu ấn lịch sử hào hùng của dân tộc</h2>
-            <a href="example.url">Xem thêm</a>
+            <a href="#">Xem thêm</a>
           </div>
           <div class="stage-item">
             <h2>Nạn đói lịch sử năm Ất Dậu</h2>
@@ -211,7 +240,7 @@
               Trong ký ức người Việt Nam, "nạn đói năm Ất Dậu" vẫn là một cơn ác mộng, nỗi nhức nhối khó quên. 
               Thảm họa ấy bắt đầu từ tháng 10/1944 kéo dài đến giữa năm 1945.
             </p>
-            <a href="example.url">Xem thêm</a>
+            <a href="#">Xem thêm</a>
           </div>
           <div class="stage-item">
             <h2>Chiến dịch Việt Bắc Thu - Đông 1947 góp phần đánh bại chiến lược 
@@ -222,7 +251,91 @@
               có tầm chiến lược, tác động tích cực đến tiến trình cuộc kháng chiến của 
               nhân dân Việt Nam.
             </p>
-            <a href="example.url">Xem thêm</a>
-      </columns>
+            <a href="#">Xem thêm</a>
+          </div>
+        </div>
+        <div class="stage-collumn">
+          <h1>1945-1954</h1>
+          <img src="../assets/main-giaidoanlichsu-1.png" alt="1945-1954">
+          <div class="stage-item">
+            <h2>Ngày Quốc Khánh Việt Nam 2/9 - Dấu ấn lịch sử hào hùng của dân tộc</h2>
+            <a href="#">Xem thêm</a>
+          </div>
+          <div class="stage-item">
+            <h2>Nạn đói lịch sử năm Ất Dậu</h2>
+            <p>
+              Trong ký ức người Việt Nam, "nạn đói năm Ất Dậu" vẫn là một cơn ác mộng, nỗi nhức nhối khó quên. 
+              Thảm họa ấy bắt đầu từ tháng 10/1944 kéo dài đến giữa năm 1945.
+            </p>
+            <a href="#">Xem thêm</a>
+          </div>
+          <div class="stage-item">
+            <h2>Chiến dịch Việt Bắc Thu - Đông 1947 góp phần đánh bại chiến lược 
+              “Đánh nhanh, thắng nhanh” của thực dân Pháp</h2>
+            <p>
+              Trong cuộc kháng chiến chống thực dân Pháp xâm lược (1945 - 1954), 
+              chiến thắng Việt Bắc Thu - Đông 1947 là một trong những sự kiện lịch sử 
+              có tầm chiến lược, tác động tích cực đến tiến trình cuộc kháng chiến của 
+              nhân dân Việt Nam.
+            </p>
+            <a href="#">Xem thêm</a>
+          </div>
+        </div>
+        <div class="stage-collumn">
+          <h1>1945-1954</h1>
+          <img src="../assets/main-giaidoanlichsu-1.png" alt="1945-1954">
+          <div class="stage-item">
+            <h2>Ngày Quốc Khánh Việt Nam 2/9 - Dấu ấn lịch sử hào hùng của dân tộc</h2>
+            <a href="#">Xem thêm</a>
+          </div>
+          <div class="stage-item">
+            <h2>Nạn đói lịch sử năm Ất Dậu</h2>
+            <p>
+              Trong ký ức người Việt Nam, "nạn đói năm Ất Dậu" vẫn là một cơn ác mộng, nỗi nhức nhối khó quên. 
+              Thảm họa ấy bắt đầu từ tháng 10/1944 kéo dài đến giữa năm 1945.
+            </p>
+            <a href="#">Xem thêm</a>
+          </div>
+          <div class="stage-item">
+            <h2>Chiến dịch Việt Bắc Thu - Đông 1947 góp phần đánh bại chiến lược 
+              “Đánh nhanh, thắng nhanh” của thực dân Pháp</h2>
+            <p>
+              Trong cuộc kháng chiến chống thực dân Pháp xâm lược (1945 - 1954), 
+              chiến thắng Việt Bắc Thu - Đông 1947 là một trong những sự kiện lịch sử 
+              có tầm chiến lược, tác động tích cực đến tiến trình cuộc kháng chiến của 
+              nhân dân Việt Nam.
+            </p>
+            <a href="#">Xem thêm</a>
+          </div>
+        </div>
+        <div class="stage-collumn">
+          <h1>1945-1954</h1>
+          <img src="../assets/main-giaidoanlichsu-1.png" alt="1945-1954">
+          <div class="stage-item">
+            <h2>Ngày Quốc Khánh Việt Nam 2/9 - Dấu ấn lịch sử hào hùng của dân tộc</h2>
+            <a href="#">Xem thêm</a>
+          </div>
+          <div class="stage-item">
+            <h2>Nạn đói lịch sử năm Ất Dậu</h2>
+            <p>
+              Trong ký ức người Việt Nam, "nạn đói năm Ất Dậu" vẫn là một cơn ác mộng, nỗi nhức nhối khó quên. 
+              Thảm họa ấy bắt đầu từ tháng 10/1944 kéo dài đến giữa năm 1945.
+            </p>
+            <a href="#">Xem thêm</a>
+          </div>
+          <div class="stage-item">
+            <h2>Chiến dịch Việt Bắc Thu - Đông 1947 góp phần đánh bại chiến lược 
+              “Đánh nhanh, thắng nhanh” của thực dân Pháp</h2>
+            <p>
+              Trong cuộc kháng chiến chống thực dân Pháp xâm lược (1945 - 1954), 
+              chiến thắng Việt Bắc Thu - Đông 1947 là một trong những sự kiện lịch sử 
+              có tầm chiến lược, tác động tích cực đến tiến trình cuộc kháng chiến của 
+              nhân dân Việt Nam.
+            </p>
+            <a href="#">Xem thêm</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body> 
 </html>
