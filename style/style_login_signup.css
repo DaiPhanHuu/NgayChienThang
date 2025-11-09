@@ -1,0 +1,167 @@
+h1
+{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 4vw;
+  text-align: center;
+  color: #d30304;
+  margin-bottom: 48px;
+}
+h2
+{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 1.3vw;
+  color: black;
+  margin-bottom: 10px;
+}
+.tab_warpper {
+  overflow: hidden;
+  width: 35vw;
+  margin: 48px 32.5vw 0px;
+}
+.tab {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  font-size: 1.7vw;
+  color: gray;
+  float: left;
+  border: none;
+  border-bottom: 2px solid gray;
+  cursor: pointer;
+  width: 50%;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+}
+.tab.active {
+  border-bottom: 2px solid #d30304;
+  color: #d30304;
+  font-weight: 700;
+}
+.form_warpper{
+  width: 35vw;
+  margin: 0px 32.5vw 0px;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+.form_slider{
+  display: flex;
+  width: 200%;
+  transition: transform 0.3s ease-in-out, height 0.5s ease-in-out;
+  will-change: transform, height;
+}
+#login_form, #signup_form {
+  width: 100%;
+  margin: none;
+  padding: none;
+}
+.form input{
+  display: block;
+  width: 95%;
+  margin-left: 1%;
+  margin-bottom: 24px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+#login_form a{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: gray;
+  text-decoration: none;
+  float: right;
+  margin-bottom: 24px;
+  margin-right: 5%;
+}
+#login_form a:hover{
+  text-decoration: underline;
+}
+.form input{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: black;
+  margin: none;
+  padding: none;
+} 
+.submit_button {
+  width: 95%;
+  text-align: center;
+  background-color: #d30304;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0px 20px 0px;
+  padding: 12px 20px; 
+}
+.submit_button:hover {
+  background-color: darkred;
+  transition: 0.2s;
+}
+.alt_login{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 32px;
+}
+.alt_login_message::before, .alt_login_message::after{
+  display: inline-block;
+  content: "";
+  border-top: 2px solid black;
+  margin: 0px 8px;
+  width: 30%;
+  transform: translateY(-4px);
+}
+.alt_login a{
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+}
+.alt_login a:hover{
+  text-decoration: underline;
+}
+.social_buttons{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+.social_buttons button{
+  display: flex;
+  background-color: #f2f2f2;
+  width: 30%;
+  margin: 0px 2.5% 0px 2.5%;
+  padding: 8px 24px 8px 24px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 5px;
+} 
+.social_buttons button img{
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  position: relative;
+}
+.social_buttons button span{
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin: none;
+  padding: none;
+}
