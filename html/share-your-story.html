@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng bài</title>
     <link rel="stylesheet" href="../style/share-your-story.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css" rel="stylesheet">
+
 </head>
 <body>
     <main class="create-story">
@@ -27,22 +30,81 @@
 
         </section>
 
-        <section class="make-story">
-            <div class="mk-form">
-                <label for="post-title">Tiêu đề bài viết</label>
-                <textarea type="text" id="post-title" placeholder="Nhập nội dung tiêu đề"></textarea>
-            </div>
+        <section class="container">
+            <div class="main-layout">
+                <main class="editor-column">
+                    <form action="" class="editor-form">
+                        <div class="form-group">
+                            <label for="post-title" class="form-group__label">Tiêu đề bài viết</label>
+                            <input type="text" id="post-title" class="form-group__input" placeholder="Nhập nội dung tiêu đề">
+                        </div>
+                        <div class="form-group">
+                            <label for="post-summary" class="form-group__label">Tóm tắt ngắn</label>
+                            <input type="text" id="post-summary" class="form-group__input">
+                        </div>
+                        <div class="form-group">
+                            <label for="post-content" class="form-group__label">Nội dung bài viết</label>
+                            
+                            <textarea 
+                                id="post-content" 
+                                class="form-group__textarea" 
+                                rows="15" 
+                                placeholder="Nhập nội dung bài viết của bạn tại đây..."></textarea>
+                        </div>
+                    </form>
+                </main>
 
-            <div class="mk-form">
-                <label for="short-sum">Tóm tắt ngắn</label>
-                <textarea type="text" id="short-sum"></textarea>
-            </div>
+                <aside class="sidebar-column">
+                    <h2 class="sidebar__tittle">Bài viết của bạn</h2>
 
-            <div class="mk-form">
-                <label for="content">Nội dung bài viết</label>
-                <textarea type="text" id="content" placeholder="Nhập nội dung..."></textarea>
+                    <ul class="article-list">
+                        <li class="article-item">
+                            <span>4 giờ trước</span>
+                            <h3>Nhật ký Đặng Thùy Trâm</h3>
+                            <p>Review về cuốn nhật ký sau 30 năm lưu lạc</p>
+                            <p class="gray-text">xem thêm</p>
+                        </li>
+                        <li class="article-item">
+                            <span>03/12/2020</span>
+                            <h3>Địa đạo Củ Chi</h3>
+                            <p>Bước theo dấu chân của những anh hùng du kích</p>
+                        </li>
+                        <li class="article-item">
+                            <span>4 giờ trước</span>
+                            <h3>Điệp viên hoàn hảo X6</h3>
+                            <p>Phạm Xuân Ẩn</p>
+                        </li>
+                        <li class="article-item">
+                            <span>4 giờ trước</span>
+                            <h3>Thành cổ Quảng Trị</h3>
+                            <p>Khúc tráng ca bất tử</p>
+                        </li>
+                    </ul>
+                </aside>
             </div>
         </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/suneditor.min.js"></script>
+
+    <script>
+        const editor = SUNEDITOR.create('post-content', {
+            buttonList: [
+                ['undo', 'redo'],
+                ['font', 'fontSize', 'formatBlock'],
+                ['paragraphStyle', 'blockquote'],
+                ['bold', 'underline', 'italic', 'strike'],
+                ['fontColor', 'hiliteColor'],
+                ['removeFormat'],
+                '/', 
+                ['outdent', 'indent'],
+                ['align', 'horizontalRule', 'list', 'lineHeight'],
+                ['table', 'link', 'image'], 
+                ['fullScreen', 'showBlocks', 'codeView'],
+                ['preview', 'print']
+            ],
+            height: '650px',
+        });
+    </script>
 </body>
 </html>
