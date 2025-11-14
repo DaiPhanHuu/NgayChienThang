@@ -6,12 +6,15 @@
 
 body {
   background-color: #FAFAFA;
-  font-family: 'Inter', sans-serif; /* Set a default modern font */
+  font-family: 'Inter', sans-serif; 
   color: #333333;
 }
+body a {
+  text-decoration: none;
+  color: inherit;
+}
 
-/* --- BANNER AND FRONT PAGE LAYOUT --- */
-
+/* BANNER */
 .banner{
   width: 100vw;
   height: auto;
@@ -21,17 +24,18 @@ body {
   width: 100%;
   height: auto;
 }
+
+/* FRONT PAGE (SLIDER + TIN TỨC MỚI) */
 .front-page{
   display: flex;
   margin: 12px 0.3vw 24px 0.3vw;
+  gap: 2vw;
   max-width: 1350px; 
   max-height: 80vh;
   margin-left: auto;
   margin-right: auto;
   align-items: stretch;
 }
-
-/* --- SLIDER SECTION --- */
 
 .slider{
   width: 70%; 
@@ -62,13 +66,10 @@ body {
   right: 40px;
   color: white;
   font-family: 'Playball', cursive;
-  font-size: 4vw;
+  font-size: 5em;
   font-weight: 300;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Enhance visibility */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
-
-/* --- NEWS SECTION (Right Sidebar) --- */
 
 .news{
   display: flex;
@@ -87,7 +88,7 @@ body {
   margin: 0.25vw 0 0.5vw 0; 
   padding: none;
   font-family: 'Inter', sans-serif;
-  border-bottom: 1px solid #CCCCCC; /* Separator line */
+  border-bottom: 1px solid #CCCCCC;
   padding-bottom: 10px;
   margin-bottom: 15px;
 }
@@ -99,7 +100,7 @@ body {
 }
 .news-header a{
   text-decoration: none;
-  color: black; /* Use a distinct color for the "Xem thêm" link */
+  color: black;
   font-size: 90%;
   margin: none;
   padding: none;
@@ -209,7 +210,7 @@ body {
 }
 
 
-/* --- WRITERS SECTION --- */
+/* NHÀ VĂN LỖI LẠC*/
 
 .great-writers {
   max-width: 1350px; 
@@ -254,7 +255,7 @@ body {
   margin: 5px 0;
 }
 
-.writer-item p:nth-child(3) { /* Second paragraph (Job/Title) */
+.writer-item p:nth-child(3) {
   font-weight: 500;
   color: #666;
   font-size: 0.9em;
@@ -270,22 +271,32 @@ body {
   padding: 0 10px;
 }
 
-/* --- MADAM BINH SECTION --- */
+/* MADAM BÌNH */
 
 .People-of-the-Revolution {
   display: flex;
-  max-width: 1350px;
-  max-height: 50vh;
-  justify-content: space-between;
+  width: 100vw;
+  height: 80vh;
+  justify-content: center;
+  border: #2F3640 1px solid;
+  border-radius: 10px;
+  background-color: #2F3640;
+  margin: 60px auto;
+  padding: 20px 0.5vw;
+}
+
+.People-of-the-Revolution-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1650px;
+  height: 60vh;
+  margin: auto auto;
   align-items: stretch;
-  margin-top: 60px;
-  margin-bottom: 60px;
 }
 
 .People-of-the-Revolution-column {
   width: 100%;
   flex-grow: 1;
-  max-height: 50vh;
   padding: none;
 }
 .People-of-the-Revolution-column img {
@@ -297,13 +308,14 @@ body {
 .People-of-the-Revolution .caption {
   width: 100%;
   padding: 0 10px;
+  color: #CCCCCC;
 }
 
 .People-of-the-Revolution .caption h1 {
   font-family: 'Inter', sans-serif;
   font-size: 1.8em;
   font-weight: 700;
-  color: #333;
+  color: white;
   text-align: left;
 }
 
@@ -314,20 +326,19 @@ body {
 
 .People-of-the-Revolution-art-column {
   width: 100%;
-  max-height: 50vh;
+  max-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  flex-grow: 1;
 }
 
 .People-of-the-Revolution-art-column img {
   width: 100%;
-  height: auto;
+  flex-grow: 1;
   object-fit: cover;
 }
 
-/* --- LOVE STORIES SECTION --- */
+/* TÌNH YÊU THỜI CHIẾN */
 
 .Love.Stories.of.the.War {
     max-width: 1350px; 
@@ -340,13 +351,13 @@ body {
     font-size: 2.2em;
     font-weight: 400;
     margin-bottom: 20px;
-    color: #CC0000;
+    color: black;
     display: inline-block;
 }
 
 .Love.Stories.of.the.War a {
     text-decoration: none;
-    color: #CC0000; 
+    color: black; 
     font-size: 1em;
     font-weight: 500;
     margin-left: 20px;
@@ -371,7 +382,7 @@ body {
 
 .love-story-item img {
     width: 100%;
-    height: 30%;
+    height: 40%;
     border-radius: 10px;
     object-fit: cover;
     margin-bottom: 10px;
@@ -391,10 +402,10 @@ body {
 }
 
 
-/* --- NUMBERS SECTION --- */
+/* NHỮNG CON SỐ */
 
 .Numbers-dont-lie {
-    background-color: #2F3640; /* Dark background as seen in the image */
+    background-color: #2F3640;
     color: white;
     padding: 50px 0;
     text-align: center;
@@ -406,14 +417,14 @@ body {
     font-size: 2.5em;
     font-weight: 400;
     margin-bottom: 10px;
-    color: #FFC312; /* Yellow color */
+    color: #FFC312;
 }
 
 .Numbers-dont-lie a {
-    display: none; /* 'Xem thêm' link not visible in this section in the design */
+  text-decoration: none;
 }
 
-.Numbers-dont-lie > p { /* The introductory paragraph */
+.Numbers-dont-lie > p {
     max-width: 800px;
     margin: 0 auto 40px auto;
     font-size: 1em;
@@ -423,9 +434,9 @@ body {
 
 .Numbers-dont-lie .number-item {
     display: inline-block;
-    width: 15%; /* Six items per row */
+    width: 30%;
     text-align: center;
-    margin: 0 1%;
+    margin: 2% 1%;
     vertical-align: top;
 }
 
@@ -444,7 +455,7 @@ body {
 
 .Numbers-dont-lie .numbers-img {
     width: 100%;
-    max-width: 1000px; /* Limit image width */
+    max-width: 1000px;
     height: auto;
     margin-top: 40px;
     border-radius: 10px;
@@ -452,21 +463,22 @@ body {
 }
 
 
-/* --- HISTORICAL STAGE SECTION --- */
+/* GIAI ĐOẠN LỊCH SỬ */
 
 .Historical-stage {
+    width: 80vw;
     max-width: 1350px; 
     margin: 40px auto 60px auto;
     padding: 0 0.5vw;
 }
 
-.Historical-stage h1:not(.stage-collumn h1) { /* Main heading */
+.Historical-stage h1{
     text-align: center;
-    font-family: 'Playball', cursive;
+    font-family: 'Pinyon Script', cursive;
     font-size: 2.5em;
-    font-weight: 400;
+    font-weight: 900;
     margin-bottom: 30px;
-    color: #CC0000;
+    color: black;
 }
 
 .stage-container {
@@ -476,19 +488,27 @@ body {
 }
 
 .stage-collumn {
-    width: 25%; /* Four columns */
+    width: 25%;
     border: 1px solid #CCCCCC;
     border-radius: 10px;
-    overflow: hidden; /* Contains the border-radius for the image */
+    overflow: hidden;
     padding: 15px;
     text-align: center;
 }
 
-.stage-collumn h1 {
+.stage-collumn h2 {
     font-size: 1.2em;
     font-weight: 700;
-    color: #CC0000;
+    color: black;
     margin-bottom: 10px;
+    text-align: left;
+}
+
+.stage-collumn h2::before{
+  display: inline;
+  content: "";
+  border-left: 5px solid black;
+  margin-right: 10px;
 }
 
 .stage-collumn img {
@@ -508,7 +528,7 @@ body {
     border-bottom: none;
 }
 
-.stage-item h2 {
+.stage-item h3 {
     font-size: 1em;
     font-weight: 700;
     margin-bottom: 5px;
@@ -532,53 +552,16 @@ body {
     text-decoration: underline;
 }
 
-/* --- FOOTER (Assuming it's part of your image design) --- */
-/* The provided HTML does not include the footer, but it's in the design image. */
-/* If you add the footer HTML, this styling will apply: */
-
-.footer-background {
-    background-color: #2F3640;
-    color: white;
-    padding: 20px 0;
-}
-.footer-content {
-    max-width: 1350px; 
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    border-top: 1px solid #444;
-}
-
-.footer-section h2 {
-    font-size: 1.2em;
-    color: #FFC312;
-    margin-bottom: 10px;
-}
-
-.footer-section a {
-    display: block;
-    color: #CCC;
-    text-decoration: none;
-    margin-bottom: 5px;
-    font-size: 0.9em;
-}
-
-.footer-section a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-.footer-contact p, .footer-contact a {
-    font-size: 0.9em;
-    line-height: 1.5;
-    color: #CCC;
-}
-
-.footer-copyright {
-    text-align: center;
-    font-size: 0.8em;
-    color: #666;
-    padding: 10px 0;
-    border-top: 1px solid #444;
+/* PADORAMA */
+.padorama{
+  width: 100vw;
+  max-width: none;
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  margin: 40px 0px;
+  padding: 0;
 }
