@@ -1,3 +1,4 @@
+/* Tiêu đề */
 h1
 {
   font-family: "Montserrat", sans-serif;
@@ -17,6 +18,8 @@ h2
   color: black;
   margin-bottom: 10px;
 }
+
+/* Tab chuyển đổi giữa đăng nhập và đăng ký */
 .tab_warpper {
   overflow: hidden;
   width: 35vw;
@@ -42,6 +45,8 @@ h2
   color: #d30304;
   font-weight: 700;
 }
+
+/* Form đăng nhập và đăng ký */
 .form_warpper{
   width: 35vw;
   margin: 0px 32.5vw 0px;
@@ -90,6 +95,8 @@ h2
   margin: none;
   padding: none;
 } 
+
+/* Nút tiếp tục */
 .submit_button {
   width: 95%;
   text-align: center;
@@ -108,6 +115,8 @@ h2
   background-color: darkred;
   transition: 0.2s;
 }
+
+/* Đăng nhập bằng mạng xã hội */
 .alt_login{
   text-align: center;
   font-family: "Montserrat", sans-serif;
