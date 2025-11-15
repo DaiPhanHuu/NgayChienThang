@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .create-story {
@@ -55,7 +55,7 @@
     color: white;
     text-decoration: none;
     font-weight: 700;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Inter', sans-serif;
 }
 
 .share-story .ss-text {
@@ -64,14 +64,14 @@
 }
 
 .share-story .ss-text h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 800;
     font-size: 3.5rem;
     margin-bottom: 1rem;
 }
 
 .share-story .ss-text p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
 }
@@ -119,7 +119,7 @@
     width: 100%;
     padding: 16px;
     font-size: 1rem;
-    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Inter', sans-serif;
     border: 1px solid #E0E0E0;
     border-radius: 8px;
     background-color: #FFFFFF;
