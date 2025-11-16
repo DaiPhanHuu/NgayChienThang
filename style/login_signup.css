@@ -1,12 +1,15 @@
 /* Tiêu đề */
+body {
+  background-color: #FAFAFA;
+}
 h1
 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  font-size: 4vw;
+  font-size: 3em;
   text-align: center;
   color: #d30304;
+  margin-top: 48px;
   margin-bottom: 48px;
 }
 h2
@@ -26,7 +29,7 @@ h2
   margin: 48px 32.5vw 0px;
 }
 .tab {
-  background-color: white;
+  background-color: #fafafa;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 25px;
@@ -67,12 +70,19 @@ h2
 .form input{
   display: block;
   width: 95%;
+  height: 15%;
   margin-left: 1%;
   margin-bottom: 24px;
   padding: 12px 20px;
   box-sizing: border-box;
   border: 2px solid gray;
   border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  color: black;
+  margin: none;
+  padding: none;
 }
 #login_form a{
   font-family: "Montserrat", sans-serif;
@@ -87,14 +97,6 @@ h2
 #login_form a:hover{
   text-decoration: underline;
 }
-.form input{
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  color: black;
-  margin: none;
-  padding: none;
-} 
 
 /* Nút tiếp tục */
 .submit_button {
@@ -121,7 +123,8 @@ h2
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1em;
+  line-height: 1.7em;
   color: black;
   margin-bottom: 32px;
 }
@@ -145,7 +148,7 @@ h2
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 24px;
+  margin-top: 2em;
   margin-bottom: 48px;
 }
 .social_buttons button{
@@ -169,7 +172,7 @@ h2
 }
 .social_buttons button span{
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 300;
   margin: none;
   padding: none;

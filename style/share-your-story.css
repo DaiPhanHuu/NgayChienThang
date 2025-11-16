@@ -5,9 +5,13 @@
     font-family: 'Inter', sans-serif;
 }
 
+body {
+  background-color: #FAFAFA;
+}
+
 .create-story {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
