@@ -22,7 +22,8 @@ ul {
 
 .search-bar {
     display: flex;
-    flex-direction: column;
+    gap: 20px;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     margin: 10px;
@@ -33,6 +34,9 @@ ul {
     padding: 8px;
     border: 1px solid #666666;
     border-radius: 8px;
+}
+.search-bar button{
+    font-size: 25px;
 }
 
 .version {

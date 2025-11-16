@@ -53,6 +53,5 @@ tabs.forEach(tab => {
       formSlider.style.transform = 'translateX(-50%)';
   formSlider.style.height = `${window.signupHeight}px`;
     }
-  
   });
 });

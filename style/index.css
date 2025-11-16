@@ -466,6 +466,7 @@ body a {
 /* GIAI ĐOẠN LỊCH SỬ */
 
 .Historical-stage {
+    position: relative;
     width: 80vw;
     max-width: 1350px; 
     margin: 40px auto 60px auto;
@@ -554,14 +555,17 @@ body a {
 
 /* PADORAMA */
 .padorama{
+  position: relative;
   width: 100vw;
   max-width: none;
-  display: flex;
-  flex-grow: 1;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  justify-content: center;
-  margin: 40px 0px;
+  display: block;
+  margin: 40px 0;
   padding: 0;
+}
+.padorama img{
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  object-fit: cover;
 }
