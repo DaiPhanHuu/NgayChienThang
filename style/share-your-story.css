@@ -5,6 +5,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+body {
+  background-color: #FAFAFA;
+}
+
 .create-story {
     max-width: 1200px;
     margin: 40px auto;

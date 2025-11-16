@@ -1,4 +1,7 @@
 /* Tiêu đề */
+body {
+  background-color: #FAFAFA;
+}
 h1
 {
   font-family: "Montserrat", sans-serif;
@@ -26,7 +29,7 @@ h2
   margin: 48px 32.5vw 0px;
 }
 .tab {
-  background-color: white;
+  background-color: #fafafa;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 25px;

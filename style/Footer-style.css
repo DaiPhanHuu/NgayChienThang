@@ -28,15 +28,9 @@ footer {
 }
 
 .footer-logo {
-    font-family: Pinyon Script;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 64px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .footer-gray-text {
