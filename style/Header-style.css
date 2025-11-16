@@ -28,17 +28,9 @@ header {
 }
 
 .logo {
-    font-family: Pinyon Script;
-    font-weight: 400;
-    font-style: Regular;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    margin: 1vw 1vw 1vw 3vw;
-    padding: 0;
-    white-space: nowrap;
-    font-size: 3.5vw;
-
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .main-nav {
