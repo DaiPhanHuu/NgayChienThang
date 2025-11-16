@@ -471,6 +471,10 @@ body a {
   color: #FFC312;
 }
 
+.numbers-container {
+  max-width: 60vw;
+}
+
 .Numbers-dont-lie a {
 text-decoration: none;
 }
