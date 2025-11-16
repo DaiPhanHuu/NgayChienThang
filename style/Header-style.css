@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Header - code */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 header {
     position: sticky;
