@@ -214,6 +214,7 @@ body a {
 
 .great-writers {
   position: relative; 
+  width: 90vw;
   max-width: 1650px; 
   margin: 40px auto;
   padding: 0 0.5vw;
@@ -336,7 +337,7 @@ body a {
 
 .People-of-the-Revolution-wrapper {
   display: flex;
-  width: 100%;
+  width: 90%;
   max-width: 1650px;
   height: 60vh;
   margin: auto auto;
@@ -356,7 +357,8 @@ body a {
 
 .People-of-the-Revolution .caption {
   width: 100%;
-  font-size: 1.3em;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1em;
   line-height: 2.5em;
   padding: 20px 10px 20px 20px;
   color: #CCCCCC;
@@ -574,7 +576,7 @@ text-decoration: none;
 
 .stage-collumn img {
   width: 100%;
-  height:35%;
+  height: 25%;
   border-radius: 5px;
   margin-bottom: 15px;
 }
