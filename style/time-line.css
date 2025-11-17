@@ -250,7 +250,7 @@ body{
 .item-tag {
     display: inline-block;
     border: 1px solid #333;
-    border-radius: 12px; /* Bo tròn góc */
+    border-radius: 12px;
     padding: 2px 8px;
     font-size: 0.75em;
     color: #333;

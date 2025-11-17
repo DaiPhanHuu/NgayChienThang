@@ -168,7 +168,7 @@ body {
   font-weight: 600;
   opacity: 0.1; /* "in chìm" */
   pointer-events: none; /* Cho phép click/hover xuyên qua */
-  transform: rotate(-15deg); /* Chữ nghiêng */
+  transform: rotate(-15deg);
 }
 
 /* Responsive */
