@@ -72,17 +72,16 @@ body {
 .stats-grid {
   grid-column: 1 / 2;
   display: grid;
-  grid-template-columns: 1fr; /* image on top, stats list below */
+  grid-template-columns: 1fr;
   gap: 15px;
 }
 
 .stats-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* two stats per row */
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
 
-/* Statistics boxes */
 .stat-box {
   background-color: #fafafa;
   padding: 15px;
